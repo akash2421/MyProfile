@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
 :root {
-  --primary-color: #E15554;
+  --primary-color: #047aed;
   --secondary-color: #1c3fa8;
-  --dark-color: #E15554;
+  --dark-color: #002240;
   --light-color: #f4f4f4;
   --success-color: #5cb85c;
   --error-color: #d9534f;
@@ -12,9 +12,8 @@
 * {
   box-sizing: border-box;
   padding: 0;
-  scroll-behavior: smooth;
-
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -124,53 +123,24 @@ pre {
   margin: 30px 0;
 }
 
-.showcase-form input[type='text'],
-.showcase-form input[type='email'] {
-  border: 0;
-  border-bottom: 1px solid #b4becb;
-  width: 100%;
-  padding: 3px;
-  font-size: 16px;
-}
 
-.showcase-form input:focus {
-  outline: none;
-}
+
 
 .showcase::before,
 .showcase::after {
   content: '';
   position: absolute;
   height: 100px;
-  bottom: -120px;
+  bottom: -70px;
   right: 0;
   left: 0;
   background: #fff;
-  transform: skewY(-9deg);
+  transform: skewY(-3deg);
   -webkit-transform: skewY(-3deg);
-  -moz-transform: skewY(-2deg);
+  -moz-transform: skewY(-3deg);
   -ms-transform: skewY(-3deg);
 }
 
-/* Stats */
-.stats {
-  padding-top: 100px;
-  animation: slideInFromBottom 1s ease-in;
-}
-
-.stats-heading {
-  max-width: 500px;
-  margin: auto;
-}
-
-.stats .grid h3 {
-  font-size: 35px;
-}
-
-.stats .grid p {
-  font-size: 20px;
-  font-weight: bold;
-}
 
 /* Cli */
 .cli .grid {
@@ -189,12 +159,13 @@ pre {
 }
 
 /* Languages */
-.languages{
-  background-color: var(--primary-color);
 
+.languages
+{
+  background:  var(--primary-color);
+  color: #fff;
+  padding: 60px 0;
 }
-
-
 .languages .flex {
   flex-wrap: wrap;
 }
@@ -225,14 +196,9 @@ pre {
   width: 300px;
   justify-self: flex-end;
 }
-.features-main .card {
-  transition: transform .2s  }
-.features-main .card:hover {
-  transform: scale(1.1);
-  }
+
 .features-main .card > i {
   margin-right: 20px;
-  animation: slideInFromLeft 1s ease-in;
 }
 
 .features-main .grid {
@@ -251,7 +217,6 @@ pre {
 .docs-main h3 {
   margin: 20px 0;
 }
-
 
 .docs-main .grid {
   grid-template-columns: 1fr 2fr;
@@ -290,6 +255,7 @@ pre {
   color: #1C9CEA;
 }
 
+/* Animations */
 @keyframes slideInFromLeft {
   0% {
     transform: translateX(-100%);
@@ -391,6 +357,7 @@ pre {
 
 
 
+/* Mobile */
 @media (max-width: 500px) {
   .navbar {
     height: 110px;
@@ -407,6 +374,12 @@ pre {
   
   .showcase-form {
     width: 300px;
-  }
 
+  }
+  .showcase-form img {
+    max-width: 250px;
+    overflow: hidden;
+
+  }
+ 
 }
