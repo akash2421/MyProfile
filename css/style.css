@@ -190,7 +190,7 @@ pre {
   }
   .features-main .card{
     display: flex;
-    width: 490px;
+    flex-wrap: wrap;
     gap: 1rem;
     flex-direction: column;
     align-items: start;
