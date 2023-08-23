@@ -317,7 +317,7 @@ align-items: start;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
   }
-.features-main .card{
+.features-main .container {
   width: 100%;
 }
   .showcase {
