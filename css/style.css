@@ -190,7 +190,7 @@ pre {
   }
   .features-main .card{
     display: flex;
-    flex-wrap: wrap;
+    width: 490px;
     gap: 1rem;
     flex-direction: column;
     align-items: start;
@@ -317,7 +317,9 @@ align-items: start;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
   }
-
+.features-main .card{
+  width: 100%;
+}
   .showcase {
     height: auto;
   }
@@ -354,7 +356,9 @@ align-items: start;
   .navbar .flex {
     flex-direction: column;
   }
-
+  .features-main .card{
+    width: 100%;
+  }
   .navbar ul {
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.1);
