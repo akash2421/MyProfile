@@ -170,6 +170,7 @@ pre {
 
 .languages .card {
   text-align: center;
+  width: 150px;
   margin: 18px 10px 40px;
   transition: transform 0.2s ease-in;
 }
